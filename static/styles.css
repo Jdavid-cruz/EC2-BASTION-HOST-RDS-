@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Contenedor del formulario */
+  .registration-form {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Título */
+  .registration-form h1 {
+    color: #0077b6;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  
+  /* Inputs */
+  .registration-form .form-control,
+  .registration-form .form-select {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s;
+  }
+  
+  .registration-form .form-control:focus,
+  .registration-form .form-select:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 0 0.2rem rgba(0, 119, 182, 0.25);
+  }
+  
+  /* Botón */
+  .registration-form button {
+    padding: 0.75rem;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .registration-form button:hover {
+    background-color: #005f87;
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .registration-form {
+      padding: 1.5rem;
+    }
+  
+    .registration-form h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  
+
+  /* Página de Registro Exitoso */
+.success-message {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    margin-top: 5vh;
+    border-radius: 1rem;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .success-message h1 {
+    color: #28a745;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .user-info {
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .user-info p {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  
+  .success-message p.text-center {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  

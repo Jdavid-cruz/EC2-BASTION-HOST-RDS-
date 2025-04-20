@@ -1,0 +1,15 @@
+# Archivos sensibles y personales
+.env
+*.tfstate
+*.tfstate.backup
+*.docx
+
+# Archivos de Terraform
+.terraform/
+
+# Archivos de Python no necesarios
+__pycache__/
+*.pyc
+
+# Por si acaso VSCode
+.vscode/

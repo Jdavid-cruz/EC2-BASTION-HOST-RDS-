@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro Cloud Professionals</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .registration-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h1 {
+      font-weight: 500;
+      color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+  <div class="registration-form">
+    <h1 class="text-center mb-4">Registro Cloud Professionals</h1>
+    <form action="/register" method="POST" id="registerForm">
+      <div class="mb-3">
+        <label for="username" class="form-label">Nombre de usuario</label>
+        <input type="text" class="form-control" id="username" name="username" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Número de teléfono</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="profession" class="form-label">Profesión</label>
+        <select class="form-select" id="profession" name="profession" required>
+          <option value="" selected disabled>Selecciona tu profesión</option>
+          <option value="Cloud Architect">Cloud Architect</option>
+          <option value="DevOps Engineer">DevOps Engineer</option>
+          <option value="Site Reliability Engineer">Site Reliability Engineer</option>
+          <option value="Cloud Security Specialist">Cloud Security Specialist</option>
+          <option value="Cloud Database Administrator">Cloud Database Administrator</option>
+          <option value="Solutions Architect">Solutions Architect</option>
+          <option value="Cloud Developer">Cloud Developer</option>
+          <option value="Cloud Network Engineer">Cloud Network Engineer</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function (e) {
+      const phone = document.querySelector('[name="phone"]').value;
+      if (!/^\d{9}$/.test(phone)) {
+        e.preventDefault();
+        alert('El teléfono debe tener 9 dígitos numéricos');
+        return false;
+      }
+    });
+  </script>
+</body>
+</html>

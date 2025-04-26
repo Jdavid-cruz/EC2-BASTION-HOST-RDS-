@@ -1,6 +1,6 @@
 EC2 + RDS + Bastion Host en AWS con Terraform
 
-Este proyecto lo hice para practicar cómo montar una arquitectura real en AWS. La idea es tener una aplicación Flask donde los usuarios se registran, y esos datos se guardan en una base de datos PostgreSQL (RDS). Todo está montado usando Terraform para automatizar la infraestructura, y siguiendo buenas prácticas de red y seguridad.
+Este proyecto lo hice para montar una arquitectura real en AWS. La idea es tener una aplicación Flask donde los usuarios se registran, y esos datos se guardan en una base de datos PostgreSQL (RDS). Todo está montado usando Terraform para automatizar la infraestructura, y siguiendo buenas prácticas de red y seguridad.
 Tecnologías que usé
 
     AWS EC2 para el servidor de la app Flask

@@ -17,19 +17,6 @@ Tecnologías que usé
 
     (Y si quiero, lo puedo correr en Docker también)
 
-Cómo está organizado el proyecto
-
-EC2-RDS-Bastion-Host/
-├── app.py
-├── main.tf
-├── templates/
-│   ├── index.html
-│   ├── success.html
-│   └── error.html
-├── static/
-│   └── styles.css
-├── .gitignore
-└── README.md
 
 Qué arquitectura monté
 
